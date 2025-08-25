@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Dipali Kirdak | Frontend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full py-5 px-6 sm:px-12 md:px-20 z-50 bg-secondary bg-opacity-90 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+          <span class="font-mono text-secondary font-bold">DK</span>
+        </div>
+        <span class="ml-3 text-white font-semibold">Dipali Kirdak</span>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="#work" class="nav-link text-white text-sm font-medium">Work</a>
+        <a href="#about" class="nav-link text-white text-sm font-medium">About</a>
+        <a href="#process" class="nav-link text-white text-sm font-medium">Process</a>
+        <a href="#contact" class="nav-link text-white text-sm font-medium">Contact</a>
+      </div>
+
+      <button class="hamburger" id="hamburger-btn">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-6 sm:px-12 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="hero-content-container">
+        <div class="hero-text-container">
+          <h1 class="hero-title">Frontend Developer & AI-Powered Creator</h1>
+          <p class="hero-description">
+            I build modern, responsive websites and use AI tools to design, generate content, and accelerate development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#work">
+              <button class="btn-primary px-6 py-3 rounded-full font-medium text-sm">View my work</button>
+            </a>
+            <a href="#contact">
+              <button class="btn-outline px-6 py-3 rounded-full font-medium text-sm">Contact me</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card-container">
+          <div class="info-card">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="info-content">
+                <h3>Frontend Developer</h3>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-project-diagram"></i></div>
+              <div class="info-content">
+                <h3>5 Projects</h3>
+                <p>SkyCast, CurrencyPro, GeoLocate, Movie Finder, LaunchLab</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-robot"></i></div>
+              <div class="info-content">
+                <h3>AI Tools</h3>
+                <p>ChatGPT, Canva, GitHub Copilot</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos -->
+  <section class="py-12 bg-card-bg">
+    <div class="max-w-6xl mx-auto px-6 sm:px-12 md:px-20">
+      <p class="text-center text-gray-400 text-sm uppercase tracking-wider mb-8">Technologies I use</p>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+        <div class="client-logo flex justify-center"><span class="text-2xl font-bold text-white">HTML</span></div>
+        <div class="client-logo flex justify-center"><span class="text-2xl font-bold text-white">CSS</span></div>
+        <div class="client-logo flex justify-center"><span class="text-2xl font-bold text-white">JavaScript</span></div>
+        <div class="client-logo flex justify-center"><span class="text-2xl font-bold text-white">Github</span></div>
+        <div class="client-logo flex justify-center"><span class="text-2xl font-bold text-white">ChatGPT</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="work" class="py-20 px-6 sm:px-12 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-end mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="project-card bg-card-bg rounded-2xl overflow-hidden">
+          <div class="h-64 overflow-hidden">
+            <img src="assets/currencypro.png" alt="Currency converter" class="w-full h-full object-cover">
+          </div>
+          <div class="view-btn p-6">
+            <span class="text-primary text-sm font-medium">Frontend + API</span>
+            <h3 class="text-white text-xl font-semibold mt-2">CurrencyPro</h3>
+            <p class="text-gray-400 mt-3">Currency exchange rate tracker app using real-time API integration with a clean, responsive, and user-friendly UI.</p>
+            <a href="https://currencypros.netlify.app/" class="inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-card-bg rounded-2xl overflow-hidden">
+          <div class="h-64 overflow-hidden">
+            <img src="assets/skycast.png" alt="Weather App" class="w-full h-full object-cover">
+          </div>
+          <div class="view-btn p-6">
+            <span class="text-primary text-sm font-medium">Frontend + API</span>
+            <h3 class="text-white text-xl font-semibold mt-2">SkyCast Weather</h3>
+            <p class="text-gray-400 mt-3">Real-time weather forecasting app using API integration with clean and responsive UI.</p>
+            <a href="https://skycast26.netlify.app/" class="inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-card-bg rounded-2xl overflow-hidden">
+          <div class="h-64 overflow-hidden">
+            <img src="assets/geolocate.png" alt="Location App" class="w-full h-full object-cover">
+          </div>
+          <div class="view-btn p-6">
+            <span class="text-primary text-sm font-medium">Frontend + API</span>
+            <h3 class="text-white text-xl font-semibold mt-2">GeoLocate</h3>
+            <p class="text-gray-400 mt-3">Real-time location tracking app using geolocation API integration with an interactive, responsive, and clean UI.</p>
+            <a href="https://geolocate15.netlify.app/" class="inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card bg-card-bg rounded-2xl overflow-hidden">
+          <div class="h-64 overflow-hidden">
+            <img src="assets/launchlab.png" alt="Code Generator" class="w-full h-full object-cover">
+          </div>
+          <div class="view-btn p-6">
+            <span class="text-primary text-sm font-medium">Frontend</span>
+            <h3 class="text-white text-xl font-semibold mt-2">LaunchLab.ai</h3>
+            <p class="text-gray-400 mt-3">Startup idea showcase and project launch platform built with JavaScript, featuring a clean, responsive, and modern UI</p>
+            <a href="https://launchlab-ai.netlify.app/" class="inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition"><button type="submit">View Project</button></a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card bg-card-bg rounded-2xl overflow-hidden">
+          <div class="h-64 overflow-hidden">
+            <img src="assets/moviefinder.png" alt="Movie Finder" class="w-full h-full object-cover">
+          </div>
+          <div class="view-btn p-6">
+            <span class="text-primary text-sm font-medium">Frontend + API</span>
+            <h3 class="text-white text-xl font-semibold mt-2">Movie Finder</h3>
+            <p class="text-gray-400 mt-3">Movie search app using API integration to fetch real-time film details with a clean, responsive, and user-friendly UI.</p>
+            <a href="https://moviefinder18.netlify.app/" class="inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 sm:px-12 md:px-20 bg-card-bg">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
+          <p class="text-gray-300 mb-6">I'm <b>Dipali Kirdak</b>, a frontend developer passionate about creating modern, responsive, and user-friendly websites.</p>
+          <p class="text-gray-300 mb-8">I combine web technologies (HTML, CSS, JavaScript) with AI tools like ChatGPT and Canva to design and build projects faster and smarter.</p>
+        </div>
+        <div class="relative">
+          <img src="assets/profile.png" alt="Dipali Kirdak" class="rounded-2xl w-full">
+          <div class="absolute -inset-4 bg-primary rounded-2xl opacity-10 -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-20 px-6 sm:px-12 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">My Workflow</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mx-auto mb-6">
+            <span class="text-primary text-xl font-bold">01</span>
+          </div>
+          <h3 class="text-white text-xl font-semibold mb-3">Research</h3>
+          <p class="text-gray-400 text-sm">Understand user needs and project goals.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mx-auto mb-6">
+            <span class="text-primary text-xl font-bold">02</span>
+          </div>
+          <h3 class="text-white text-xl font-semibold mb-3">Plan</h3>
+          <p class="text-gray-400 text-sm">Use AI + brainstorming to generate ideas quickly.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mx-auto mb-6">
+            <span class="text-primary text-xl font-bold">03</span>
+          </div>
+          <h3 class="text-white text-xl font-semibold mb-3">Develop</h3>
+          <p class="text-gray-400 text-sm">Build using HTML, CSS, JavaScript, and APIs.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mx-auto mb-6">
+            <span class="text-primary text-xl font-bold">04</span>
+          </div>
+          <h3 class="text-white text-xl font-semibold mb-3">Deliver</h3>
+          <p class="text-gray-400 text-sm">Test, refine, and launch responsive projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 sm:px-12 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-card-bg rounded-2xl p-8 md:p-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Connect</h2>
+            <p class="text-gray-300 mb-8">Have a project idea or want to collaborate? I'd love to hear from you.</p>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center">
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-white font-semibold">Email</h3>
+                  <p class="text-gray-300">dipalikirdak08@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center">
+                  <i class="fas fa-map-marker-alt text-primary"></i>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-white font-semibold">Location</h3>
+                  <p class="text-gray-300">Amravati, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form id="my-form" action="https://formspree.io/f/movnawjz" method="POST">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-300 text-sm mb-2">Name</label>
+                <input type="text" id="name" name="name" placeholder="eg.John Lingo" class="w-full bg-secondary rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-300 text-sm mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="eg.example@gmail.com" class="w-full bg-secondary rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-300 text-sm mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter Your Message" class="w-full bg-secondary rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full py-3 rounded-lg font-medium">Send message</button>
+            </form>
+            <p id="my-form-status" class="mt-4 text-sm text-gray-300"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Footer -->
+  <footer class="py-12 px-6 sm:px-12 md:px-20 border-t border-white border-opacity-10">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        
+        <div class="flex items-center mb-6 md:mb-0">
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+            <span class="font-mono text-secondary font-bold">DK</span>
+          </div>
+          <span class="ml-3 text-white font-semibold">Dipali Kirdak © 2025</span>
+        </div>
+
+        <div class="social-links flex space-x-6">
+          <a href="https://www.linkedin.com/in/dipali-kirdak-4722b2303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-primary transition-colors duration-300">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="https://github.com/Dipalikirdak" class="text-gray-400 hover:text-primary transition-colors duration-300">
+            <i class="fab fa-github text-lg"></i>
+          </a>
+        </div>
+      
+      </div>
+    </div>
+  </footer>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>  
+</html>
